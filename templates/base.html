@@ -12,14 +12,25 @@
 
 
 <body>
-    <div>
-        <h1> George Vengrovski </h1>
-        <h2> Home </h2>
-        <h2> Blog </h2>
-        <h2> Projects </h2>
-        <h2> About </h2>
+    <div id="navBar">
+        <div id="navRow1">
+            <h1 id="navTitle"> George Vengrovski </h1>
+        </div>
+        <div id="navRow2">
+            <a id="link" href="/">
+                <h2 id="navRow2Items"> Home </h2>
+            </a>
+            <a id="link" href="/writings">
+                <h2 id="navRow2Items"> Writings </h2>
+            </a>
+            <a id="link" href="/projects">
+                <h2 id="navRow2Items"> Projects </h2>
+            </a>
+            <a id="link" href="/about">
+                <h2 id="navRow2Items"> About </h2>
+            </a>
+        </div>
     </div>
-
     <div>
         {% block body %} {% endblock %}
     </div>

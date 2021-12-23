@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap');
+body {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#navBar {
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+#navRow1 {
+    text-align: center;
+}
+
+#navRow2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navRow2Items {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#navTitle {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* This is needed to override the weird underline */
+
+:-webkit-any-link {
+    text-decoration: none;
+}
+
+#link:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
