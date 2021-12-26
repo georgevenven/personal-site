@@ -8,7 +8,6 @@ app = Flask(__name__)
 Markdown(app)
 app.config['SECRET_KEY'] = '42' #pass secret key through file private on github
 
-
 @app.route('/')
 def index():
     return render_template('home.html')
@@ -24,3 +23,7 @@ def about():
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
+
+@app.route('/admin2001')
+def admin2001():
+    return render_template('admin2001.html')
