@@ -1,5 +1,9 @@
-{% extends 'base.html' %} {% block title %} Home {% endblock %} {% block body %}
-
-<p> post page </p>
-
+{% extends 'base.html' %} {% block title %} {{ title }} {% endblock %} {% block body %}
+<br>
+<h1 id="postTitle">
+    {{ title | safe}}
+</h1>
+<div>
+    {{ post | safe }}
+</div>
 {% endblock %}
