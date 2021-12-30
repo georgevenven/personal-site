@@ -9,6 +9,10 @@ body {
     padding: 20px;
 }
 
+p {
+    font-size: 18px;
+}
+
 #navBar {
     font-family: 'Inconsolata', monospace;
     display: flex;
@@ -59,14 +63,25 @@ a:visited {
 
 #libaryTitle {
     font-weight: 600;
-    font-size: 18px;
 }
 
 #libaryTopic {
-    font-weight: 600;
-    font-size: 18px;
+    margin-right: 12px;
 }
 
 #libaryEntry {
     display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#libaryDate {
+    margin-left: 10px;
+}
+
+#libaryTopicCapsule {
+    height: 20px;
+    width: 100px;
+    background-color: #555;
 }

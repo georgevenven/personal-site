@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS projects;
 
 CREATE TABLE posts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    created TEXT,
     title TEXT NOT NULL,
     readtime INTEGER,
     content TEXT NOT NULL,
