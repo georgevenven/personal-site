@@ -1,15 +1,22 @@
 {% extends 'base.html' %} {% block title %} Home {% endblock %} {% block body %}
 <br>
-<h2 class="generalText"> &#128214; Writing Archive &#128214;
-</h2>
+<h2 class="generalText"> &#128214; Writing Archive &#128214;</h2>
+
 {% for post in posts %}
+
 <div class="generalText">
     <a id="libaryPosts" href="{{  url_for('post', post_id=post['id']) }}">
         <div id="libaryEntry">
-            <p id="libaryTopic"> {{ post['topic'] | safe }} </p>
 
-            <p id="libaryTitle"> {{ post['title']}} </p>
-            <p id="libaryDate"> {{ post['created']}} </p>
+            <div id="libaryTopRow">
+                <p id="libaryEmoji"> &#10024; </p>
+                <p id="libaryTitle"> {{ post['title'] | safe}} </p>
+                <p id="libaryTopic"> [ {{ post['topic'] | safe }} ]</p>
+                <p id="libaryDate"> {{ post['created']}} </p>
+            </div>
+            <div id="libaryBottomRow">
+                <p id="libaryPreview"> {{ post['previewText']}} </p>
+            </div>
         </div>
     </a>
 </div>
