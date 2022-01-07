@@ -1,5 +1,17 @@
 {% extends 'base.html' %} {% block title %} Home {% endblock %} {% block body %}
+<br>
+<h2 class="generalText"> &#128202; Projects &#128202;
+</h2>
 
-<p> projects page </p>
+{% for project in projects %}
 
-{% endblock %}
+<div class="generalText">
+    <a id="projectsLink" href="{{  url_for('project', project_id=project['title']) }}">
+        <p id="libaryTitle"> {{ project['title'] | safe}} </p>
+        <div id="projectsContainer">
+            <div id="projects">
+            </div>
+        </div>
+    </a>
+</div>
+{% endfor %} {% endblock %}
