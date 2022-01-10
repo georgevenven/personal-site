@@ -61,6 +61,11 @@ a:visited {
 
 .generalText {
     font-family: 'Inconsolata', monospace;
+    line-height: 1.25;
+}
+
+.libaryText {
+    font-family: 'Inconsolata', monospace;
 }
 
 #libaryTitle {
@@ -113,4 +118,47 @@ a:visited {
 #libaryEmoji {
     margin-right: 15px;
     justify-self: flex-start;
+}
+
+#projectsContainer {
+    display: flex;
+}
+
+#projectsCard {
+    max-width: 335px;
+}
+
+#aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#aboutImage {
+    max-width: 220px;
+    max-height: 220px;
+    border-radius: 10%;
+    margin: 10px;
+}
+
+#aboutBlurb {
+    margin: 10px;
+    min-width: 200px;
+    max-width: 540px;
+}
+
+#aboutBlurbContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutSocialContainer {
+    margin: 10px;
+}
+
+.aboutSocialText {
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.25;
+    font-weight: bold;
 }

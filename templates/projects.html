@@ -7,9 +7,12 @@
 
 <div class="generalText">
     <a id="projectsLink" href="{{  url_for('project', project_id=project['title']) }}">
-        <p id="libaryTitle"> {{ project['title'] | safe}} </p>
         <div id="projectsContainer">
-            <div id="projects">
+            <div id="projectsCard">
+                <p id="projectsTitle"> {{ project['title'] | safe}} </p>
+                <p id="projectsDate"> {{ project['created'] | safe}} </p>
+                <p id="projectsPreviewText"> {{ project['previewText'] | safe}} </p>
+                <p id="projectsTopic"> {{ project['topic'] | safe}} </p>
             </div>
         </div>
     </a>
