@@ -1,9 +1,5 @@
-{% extends 'base.html' %} {% block title %} Home {% endblock %} {% block body %}
-<br>
-<h2 class="generalText"> &#128214; Writing Archive &#128214;</h2>
-
-{% for post in posts %}
-
+{% extends 'base.html' %} {% block title %} Home {% endblock %} {% block body %} {% for post in posts %}
+</br>
 <div class="libaryText">
     <a id="libaryPosts" href="{{  url_for('post', post_id=post['id']) }}">
         <div id="libaryEntry">

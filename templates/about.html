@@ -1,18 +1,23 @@
 {% extends 'base.html' %} {% block title %} Home {% endblock %} {% block body %}
 
 </br>
-<h2 class="generalText">&#128104;&#8205;&#128295; About Me!</h2>
-<hr>
+
 <div id="aboutContainer">
     <img id="aboutImage" src="{{url_for('static', filename='images/IMG_0895.jpg')}}" />
     <div id="aboutBlurbContainer">
-        <p id="aboutBlurb" class="generalText"> Hi I am George &#128075; Currently I am a student and researcher in training studying the brain! I aim to work towards a world where suffering is abolished and qualia engineering is made possible. Outside of Neuroscience, I take interest in reading,
-            programming, weightlifting, and meditating.
+        <p id="aboutBlurb" class="generalText"> Hi I am George &#128075; Currently, I am a student and researcher (in training) studying the brain! I aim to work towards a world where suffering is abolished and qualia engineering is made possible. Outside of Neuroscience, I take interest in
+            reading, programming, weightlifting, and meditating.
         </p>
         <div id="aboutSocialContainer">
-            <p class="aboutSocialText"> &#128037; Twitter </p>
-            <p class="aboutSocialText"> &#128221; CV/Resume </p>
-            <p class="aboutSocialText"> &#128231; Email </p>
+            <a id="link" href="https://twitter.com/georgevengro">
+                <p class="aboutSocialText"> &#128037; Twitter </p>
+            </a>
+            <a id="link" href="/cv">
+                <p class="aboutSocialText"> &#128221; CV/Resume </p>
+            </a>
+            <a id="link" href="mailto:george.vengrovski@wsu.edu">
+                <p class="aboutSocialText"> &#128231; Email</p>
+            </a>
         </div>
     </div>
 </div>

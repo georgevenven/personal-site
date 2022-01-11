@@ -77,3 +77,7 @@ def project(project_id):
     post = temp[4]
     title = temp[2]
     return render_template('projectpage.html', post=post, title=title)
+
+@app.route('/cv')
+def cv():
+    return render_template('cv.html')

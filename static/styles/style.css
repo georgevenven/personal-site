@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap');
 body {
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -9,10 +9,17 @@ body {
     padding: 20px;
 }
 
+h1 {
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+}
+
 p {
     font-size: 18px;
     margin: 0;
     padding: 0;
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.25;
 }
 
 #navBar {
@@ -136,8 +143,8 @@ a:visited {
 }
 
 #aboutImage {
-    max-width: 220px;
-    max-height: 220px;
+    max-width: 240px;
+    max-height: 240px;
     border-radius: 10%;
     margin: 10px;
 }
@@ -145,7 +152,7 @@ a:visited {
 #aboutBlurb {
     margin: 10px;
     min-width: 200px;
-    max-width: 540px;
+    max-width: 420px;
 }
 
 #aboutBlurbContainer {
@@ -154,11 +161,18 @@ a:visited {
 }
 
 #aboutSocialContainer {
-    margin: 10px;
+    margin: 5px;
 }
 
 .aboutSocialText {
     font-family: 'Inconsolata', monospace;
     line-height: 1.25;
-    font-weight: bold;
+    font-style: italic;
+}
+
+#homeLinksContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 15px;
 }
