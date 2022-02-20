@@ -22,6 +22,35 @@ p {
     line-height: 1.25;
 }
 
+strong {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 22px;
+    font-family: 'Inconsolata', monospace;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.postParagraph {
+    margin-bottom: 20px;
+    text-indent: 30px;
+}
+
+.postStrong {
+    margin-bottom: 20px
+}
+
+.postItalics {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+}
+
 #navBar {
     font-family: 'Inconsolata', monospace;
     display: flex;
@@ -41,7 +70,7 @@ p {
 #navRow2Items {
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 #navTitle {
@@ -177,8 +206,31 @@ a:visited {
     margin: 15px;
 }
 
+table,
+th,
+td {
+    border: 2px dashed black;
+}
 
-/* Credit to Matt Smith For Table Design*/
+table {
+    width: 100%;
+    margin-bottom: 25px;
+    border-collapse: collapse;
+    font-size: 18px;
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.25;
+    margin-top: 15px;
+}
+
+ol {
+    font-family: 'Inconsolata', monospace;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+
+/* Credit to Matt Smith For Table Design
 
 table {
     border: 1px solid #ccc;
@@ -245,7 +297,9 @@ table th {
       * aria-label has no advantage, it won't be read inside a table
       content: attr(aria-label);
       */
-        content: attr(data-label);
+
+
+/* content: attr(data-label);
         float: left;
         font-weight: bold;
         text-transform: uppercase;
@@ -253,4 +307,4 @@ table th {
     table td:last-child {
         border-bottom: 0;
     }
-}
+} */

@@ -1,9 +1,28 @@
 {% extends 'base.html' %} {% block title %} Home {% endblock %} {% block body %}
 </br>
 </br>
-<p class="generalText"> Welcome to my site! I built this website to share my thoughts, projects, experiments, and self-directed learning.
 </p>
-</br>
+<div id="aboutContainer">
+    <img id="aboutImage" src="{{url_for('static', filename='images/IMG_0895.jpg')}}" />
+    <div id="aboutBlurbContainer">
+        <p id="aboutBlurb" class="generalText"> Hi, I'm George &#128075;. Currently, I'm a student and researcher (in training) studying the brain! I aim to work towards a world where suffering is abolished and experience engineering is made possible. Outside of Neuroscience, I take interest
+            in reading, programming, weightlifting, and meditating.
+        </p>
+        <div id="aboutSocialContainer">
+            <a id="link" href="https://twitter.com/georgevengro">
+                <strong class="aboutSocialText"> &#128037; Twitter </strong>
+            </a>
+            <a id="link" href="/cv">
+                <strong class="aboutSocialText"> &#128221; CV/Resume </strong>
+            </a>
+            <a id="link" href="mailto:george.vengrovski@wsu.edu">
+                <strong class="aboutSocialText"> &#128231; Email</strong>
+            </a>
+        </div>
+    </div>
+</div>
+<!--
+    <p class="generalText"> Welcome to my site! I built this website to share my thoughts, projects, experiments, and self-directed learning.
 
 <div id="homeLinksContainer">
     <h3 class="generalText">
@@ -16,4 +35,5 @@
         Other Links:
     </h3>
 </div>
+-->
 {% endblock %}
